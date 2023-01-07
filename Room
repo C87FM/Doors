@@ -1,5 +1,5 @@
 function MakeDoor(Point)
-	local Model = game:GetObjects("rbxassetid://12033626730")[1]
+	local Model = game:GetObjects("rbxassetid://12082651343")[1]
 	Model.Parent = Point.Parent
 	Model:SetPrimaryPartCFrame(Point.CFrame * CFrame.new(0, 0, .5))
 	
@@ -83,9 +83,9 @@ function MakeChest(Chest)
 		local Achievements = loadstring(game:HttpGet("https://raw.githubusercontent.com/RegularVynixu/Utilities/main/Doors/Custom%20Achievements/Source.lua"))()
 
 	Achievements.Get({
-		Title = "crucifix",
-		Desc = "you have the power of jesus christ with you...",
-		Reason = "You got lucky with the chest!",
+		Title = "Secret Room",
+		Desc = "Hmm....",
+		Reason = "You found storage rooms",
 		Image = "1111",
 	})
 	end
@@ -199,7 +199,7 @@ function FixRoomPoint(Point)
 end
 
 function GenerateTheSkeletonAppears(Point)
-	local Room = game:GetObjects("rbxassetid://12033618632")[1]
+	local Room = game:GetObjects("rbxassetid://12082627050")[1]
 	Room.Parent = workspace
 	Room.Name = "THE SKELETON APPEARS"
 	Room:SetPrimaryPartCFrame(Point.CFrame)
